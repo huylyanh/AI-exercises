@@ -22,5 +22,3 @@ Tasks:
 - Đối với bài toán Classification, target là cột "result"
 - Đối với bài toán Regression, target là cột "points"
 
-
-timestamp: chuyen date thanh so
