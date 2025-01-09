@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1183561a-a958-4472-8797-ee0e6aa98c2e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Week9.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Time-series-datasets/Time-series-datasets/bike-sharing-dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Time-series-datasets/Time-series-datasets/co2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Time-series-datasets/Time-series-datasets/electricity.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Time-series-datasets/Time-series-datasets/web-traffic.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bike-sharing-dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bike-sharing-ts-forecasting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cài đặt môi trường.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week1/Week1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week1/sample_output_ex8.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week1/wordsEn.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week12.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week13.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week14.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week2/Week2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week2/story.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week3/Week3.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week4/Iris (1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week4/Week4_1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week4/Week4_1_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week4/Week4_2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week5/BTVN_1/BTVN_1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week5/BTVN_1/dataset_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week5/BTVN_2/BTVN_2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week5/BTVN_2/dataset_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week5/BTVN_3/BTVN_3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week5/BTVN_3/dataset_3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week5/BTVN_4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/README.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/car.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/csgo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/csgo.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/csgo_instruction.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/diabetes_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/diabetes_data.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/diabetes_instruction.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/stroke_classification.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/stroke_classification.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week6_7/stroke_classification_instruction.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week8/Week 8.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week8/job_dataset.ods" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Time-series-datasets.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resource/classification.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resource/data.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resource/diabetes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resource_1/classification (1).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resource_1/document_classification.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resource_1/regression.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resource_2/direct_ts_forecasting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resource_2/recursive_ts_forecasting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week10/Week 10.pdf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2qVfTUbljRedHvCUWGMxTwanG4p" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.bike-sharing-ts-forecasting.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "week9",
+    "last_opened_file_path": "D:/Huy/Learning/AI/VietAI-x-CoderSchool/Week9"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="bike-sharing-ts-forecasting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Week9" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bike-sharing-ts-forecasting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.bike-sharing-ts-forecasting" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1183561a-a958-4472-8797-ee0e6aa98c2e" name="Changes" comment="" />
+      <created>1734752671321</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734752671321</updated>
+    </task>
+    <servers />
+  </component>
+</project>
