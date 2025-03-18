@@ -23,7 +23,7 @@ class FootballDataset(Dataset):
         print("len subdirs: ", len(sub_dirs))
         for sub_dir in sub_dirs:
             sub_dir_path = os.path.join(root, sub_dir)
-            print("Sub dir: ", sub_dir_path)
+            print("sub dir: ", sub_dir_path)
 
             video_path = None
             json_path = None

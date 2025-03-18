@@ -9,12 +9,16 @@ from model_classification import MyCNN
 
 project_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Detection model paths
-detection_model_path = os.path.join(project_dir, "runs", "train6", "weights", "best.pt")
+# Input video path for inference
 input_video_path = os.path.join(project_dir, "data", "Match_2031_5_0_test", "Match_2031_5_0_test.mp4")
+
+# Output video path
 output_dir = os.path.join(project_dir, "output_annotated")
 
-# Classification model paths
+# Detection model path
+detection_model_path = os.path.join(project_dir, "runs", "train9", "weights", "best.pt")
+
+# Classification model path
 classification_model_path = os.path.join(project_dir, "classification_models", "best.pt")
 
 # Confidence thresholds
@@ -93,7 +97,7 @@ while cap.isOpened():
     frame_count += 1
     annotated_frame = frame.copy()
 
-    detection_outputs = detection_model .predict(source=frame, conf=detection_confidence_ts, verbose=False)
+    detection_outputs = detection_model.predict(source=frame, conf=detection_confidence_ts, verbose=False)
 
     for r in detection_outputs:
         boxes = r.boxes

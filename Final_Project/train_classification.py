@@ -32,7 +32,26 @@ def train():
     else:
         device = torch.device("cpu")
         print("CUDA device not found. Training on CPU.")    
+
     model = MyCNN(num_classes=num_classes).to(device)
+
+    best_acc = -1
+    start_epoch = 0
+
+    # Check for last checkpoint
+    last_checkpoint_path = os.path.join(checkpoint_path, "last.pt")
+    metadata_path = os.path.join(checkpoint_path, "metadata.pt") 
+    if resume and os.path.exists(last_checkpoint_path):
+        print(f"Resume training from: {last_checkpoint_path}")
+        model.load_state_dict(torch.load(last_checkpoint_path))
+        if os.path.exists(metadata_path):
+            metadata = torch.load(metadata_path)
+            start_epoch = metadata["epoch"]
+            best_acc = metadata["best_acc"]
+        else:
+            print("Error: metadata file not found.")
+    else:
+        print("Starting training from scratch.")
 
     transform = Compose([
         ToTensor(), # Đưa kênh màu từ cuối lên đầu
@@ -69,9 +88,8 @@ def train():
 
     if not os.path.isdir(checkpoint_path):
         os.makedirs(checkpoint_path)
-    best_acc = -1
-
-    for epoch in range(num_epochs):
+    
+    for epoch in range(start_epoch, num_epochs):
         # 1) Training stage
         model.train() # Chi cho mo hinh biet trong qua trong training, do co 1 so layers qua trinh train chay 1 kieu, qua trong val chay 1 kieu
         progress_bar = tqdm(train_dataloader, colour="cyan")
@@ -126,8 +144,8 @@ def train():
                 images_reshape = images.view(-1, 3, 224, 224) # torch.Size([160, 3, 224, 224])
                 labels_reshape = labels.view(-1) # torch.Size([160])
 
-                masked_images = images_reshape[mask.view(-1)] # torch.Size([?, 3, 224, 224])
-                masked_labels = labels_reshape[mask.view(-1)] # torch.Size([?])
+                masked_images = images_reshape[mask.view(-1)] # torch.Size([x, 3, 224, 224])
+                masked_labels = labels_reshape[mask.view(-1)] # torch.Size([x])
 
                 if masked_images.shape[0] > 0:
                     output = model(masked_images) 
@@ -147,10 +165,19 @@ def train():
         writer.add_scalar(tag="Val/Loss", scalar_value=avg_loss, global_step=epoch)
         writer.add_scalar(tag="Val/Accuracy", scalar_value=acc, global_step=epoch)
 
+        # Save checkpoint
         torch.save(model.state_dict(), os.path.join(checkpoint_path, "last.pt"))
         if acc > best_acc:
             torch.save(model.state_dict(), os.path.join(checkpoint_path, "best.pt"))
             best_acc = acc
+
+        # Save metadata
+        metadata = {
+            "epoch": epoch + 1,
+            "best_acc": best_acc
+        }
+        torch.save(metadata, metadata_path)
        
 if __name__ == "__main__":
+    resume = True
     train()

@@ -9,11 +9,8 @@ input_dataset_path = "data/football_train"
 output_dataset_path = "data/football_dataset"
 MAX_FRAMES: Final = 0
 
-project_root = os.path.dirname(os.path.abspath(__file__))
-
 def main():
     sub_dirs = [d for d in os.listdir(input_dataset_path) if os.path.isdir(os.path.join(input_dataset_path, d))]
-    sub_dirs = sub_dirs[:3]
 
     all_images_dir = os.path.join(output_dataset_path, "all_images")
     all_labels_dir = os.path.join(output_dataset_path, "all_labels")
