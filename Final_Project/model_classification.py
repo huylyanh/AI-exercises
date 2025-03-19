@@ -4,9 +4,6 @@ import torch.nn as nn
 class MyCNN(nn.Module):
     def __init__(self, num_classes):
         super().__init__()
-        # kernel size = 2k + 1, padding = k ==> input = output
-        # batch norm and relu khong lam thay doi kich thuoc (shape)
-        # pooling làm thay doi kich thuoc
 
         self.conv1 = self.make_block(in_channels=3, out_channels=8)
         self.conv2 = self.make_block(in_channels=8, out_channels=16)
@@ -14,10 +11,8 @@ class MyCNN(nn.Module):
         self.conv4 = self.make_block(in_channels=32, out_channels=64)
         self.conv5 = self.make_block(in_channels=64, out_channels=64)
 
-        # self.flatten = nn.Flatten()
-
         self.fc1 = nn.Sequential(
-            nn.Dropout(p=0.5), #Droput di cùng FC là ko bắt buộc, thêm vào để tránh over fitting
+            nn.Dropout(p=0.5), 
             nn.Linear(in_features=3136, out_features=1024),
             nn.ReLU(),
         )
@@ -42,38 +37,12 @@ class MyCNN(nn.Module):
         )
 
     def forward(self, x):
-        # print("Enter forward: ", x.shape)
-        # outputs = []
-        # for img in x:
-        #     print("img: ", img.shape)
-        #     img = img.unsqueeze(0)
-        #     print("img after unsqueeze: ", img.shape)
-
-        #     out = self.conv1(img)
-        #     out = self.conv2(out)
-        #     out = self.conv3(out)
-        #     out = self.conv4(out)
-        #     out = self.conv5(out)
-        #     out = out.view(out.shape[0], -1)
-        #     out = self.fc1(out)
-        #     out = self.fc2(out)
-        #     out = self.fc3(out)
-        #     outputs.append(out)
-        # outputs = torch.cat(outputs, dim=0)
-        # return outputs
-
         out = self.conv1(x)
         out = self.conv2(out)
         out = self.conv3(out)
         out = self.conv4(out)
         out = self.conv5(out)
 
-        # x = self.flatten(x)
-        # b, c, h, w = x.shape
-        # x = x.view(b, c*h*w)
-        # x = x.view(x.shape[0], x.shape[1]*x.shape[2]*x.shape[3])
-        # view() tương tự như reshape trong numpy
-        # tong so luong phan tu: b * c * h * w / b ==> -1 (implicit dimension)
         out = out.view(x.shape[0], -1)
 
         out = self.fc1(out)
@@ -92,14 +61,3 @@ if __name__ == "__main__":
     print(output.shape)
     print(output)
 
-    # sample_data = torch.rand(16, 3, 224, 224)
-    # print(sample_data.shape)
-
-    # model = MyCNN(num_classes=10)
-    # output = model(sample_data)
-
-    # print(output.shape)
-    # print(output)
-
-# Nhom 1: Fully connected layer, Conv, Batchnorm: Parametric layers
-# Nhom 2: Pooling layer, Activation function, Dropout: Non-parametric layers
