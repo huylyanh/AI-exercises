@@ -12,7 +12,7 @@ def train():
     
     num_epochs = 10
     batch_size = 16
-    imgsz = 640
+    imgsz = 1024
     workers = 4
 
     if resume == False and os.path.exists(last_model_path):
