@@ -8,6 +8,13 @@
 
 ![image](https://github.com/user-attachments/assets/32534f12-1ee7-4037-a57e-fd833ea9a638)
 
+3) The result when put 2 models together to detect player number
+![image](https://github.com/user-attachments/assets/b5c694a6-d447-4b34-8a7a-5cbf63b42a13)
+
+![image](https://github.com/user-attachments/assets/1c350e4c-42f6-4d5f-873a-8814333b20e0)
+
+
+
 
 
 
